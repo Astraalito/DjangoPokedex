@@ -1,0 +1,28 @@
+{% extends 'pokedex/layout.html' %}
+{% load static %}
+
+{% block content %}
+
+    <form action="pokeApp/" method="post" class="form-auth">
+      <div class="form-auth">
+        <label for="name">Entrez le nom du Pokemon: </label><br>
+        <input type="text" name="name" id="name" required>
+      </div>
+      <div class="form-auth">
+        <label for="number">Entrez le numero du Pokemon: </label><br>
+        <input type="text" name="number" id="number" required>
+      </div>
+      <div class="form-auth">
+        <label for="pokeType">Entrez le type du Pokemon: </label><br>
+        <input type="text" name="pokeType" id="pokeType" required>
+      </div>
+      <div class="form-auth">
+        <label for="imageLink">Entrez le lien vers l'image du Pokemon: </label><br>
+        <input type="text" name="imageLink" id="imageLink" required>
+      </div>
+      <div class="form-auth">
+        <input type="submit" value="Se connecter">
+      </div>
+    </form>
+
+{% endblock %}

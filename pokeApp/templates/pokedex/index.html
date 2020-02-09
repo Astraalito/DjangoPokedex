@@ -1,12 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Pokédex</title>
-</head>
-<body>
+{% extends 'pokedex/layout.html' %}
+{% load static %}
 
-<h1>Pokédex</h1>
+{% block content %}
+<div class="buttonNav">
+    <a href="/pokeApp/addPokemon"><button class="button"><img src="{% static 'icon/new.svg' %}" class="icon">ajouter un Pokemon</button></a>
+    <a href="/pokeApp/authentification"><button class="button"><img src="{% static 'icon/star.svg' %}" class="icon">Se connecter</button></a>
+</div>
 
-</body>
-</html>
+{% for pokemon in allPokemons %}
+    <div class="pokeCard">
+        <img src="{{ pokemon.imageLink }}">
+        <div class="cardText">
+            <h2>00{{ pokemon.number }}.{{ pokemon.name }}</h2>
+            <p>{{ pokemon.pokeType }}</p>
+        </div>
+    </div>
+{% endfor %}
+
+{% endblock %}

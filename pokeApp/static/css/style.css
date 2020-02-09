@@ -1,0 +1,66 @@
+body{
+    background-color: #525252;
+    padding: 10px 40px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1{
+    font-size: 48px;
+    color: red;
+}
+
+.logo{
+    text-align: center;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.layout{
+    text-align: center;
+}
+
+.buttonNav{
+    text-align: center;
+}
+
+.button{
+    border: none;
+    background-color: #ca3e47;
+    color: #e3e3e3;
+    font-size: 30px;
+    padding: 18px 15px;
+    margin: 20px 20px;
+    width: 30%;
+}
+
+.icon{
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+.form-auth{
+    text-align: center;
+    margin-top: 10px;
+    border: none;
+    color: white;
+}
+
+.form-signup{
+    margin: 0 60px;
+    margin-top: 10px;
+    border: none;
+    color: white;
+}
+
+.pokeCard{
+    border: 2px solid;
+    border-color: #ca3e47;
+    border-radius: 10px;
+    margin: 10px 10px;
+    width: 30%;
+    display: flex;
+    float: left;
+    color: white;
+}

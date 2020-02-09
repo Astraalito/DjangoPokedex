@@ -1,0 +1,22 @@
+{% extends 'pokedex/layout.html' %}
+{% load static %}
+
+{% block content %}
+
+    <h1 style="text-align: center">Connexion</h1>
+
+    <form action="" method="get" class="form-auth">
+      <div class="form-auth">
+        <label for="username">Entrez votre nom d'utilisateur: </label><br>
+        <input type="text" name="username" id="username" required>
+      </div>
+      <div class="form-auth">
+        <label for="password">Entrez votre mot de passe: </label><br>
+        <input type="password" name="password" id="password" required>
+      </div>
+      <div class="form-auth">
+        <input type="submit" value="Se connecter">
+      </div>
+    </form>
+
+{% endblock %}

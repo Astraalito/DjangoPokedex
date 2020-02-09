@@ -3,7 +3,7 @@ from .models import Pokemon
 
 
 class PokedexAdmin(admin.ModelAdmin):
-    list_display = ("name", "number", "type", "imageLink", "user")
+    list_display = ("name", "number", "pokeType", "imageLink", "user")
 
 
 admin.site.register(Pokemon, PokedexAdmin)
